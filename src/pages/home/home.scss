@@ -1,3 +1,29 @@
 page-home {
+    .card{
+        width:100%!important;
+        min-height:40%!important;
+        border:solid 1px gray;
 
+        .card_content{
+            width:100%!important;
+            min-height:90%!important;
+            background:orange!important;
+        }
+
+        .card_button{
+            width:100%!important;
+            max-height: 10%;
+            background:maroon;
+            margin:auto;
+            .card_button_accept{
+                width:48%!important;
+                float: left;   
+            }
+
+            .card_button_reject{
+                width:48%!important;
+                float: right;   
+            }
+        }
+    }
 }
