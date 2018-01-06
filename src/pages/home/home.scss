@@ -1,20 +1,79 @@
 page-home {
-    .card{
-        width:100%!important;
-        min-height:40%!important;
-        border:solid 1px gray;
 
+    ion-card-content, ion-card{
+       width:100%!important; 
+       margin:0px!important;
+       padding:0px!important;
+       margin-top:10px!important;
+    }
+    .card{
         .card_content{
             width:100%!important;
-            min-height:90%!important;
-            background:orange!important;
+            min-height:70%!important;
+            float: left;
+            h6{
+                text-align: center;
+            }
+
+            .address{
+                font-size: 12px;
+            }
+
+            .menu_bar{
+                width: 100%!important;
+                margin-top:15px;
+                .menu_title{
+                    width:60%!important;
+                    float: left;
+                    padding-left: 10px;
+                }
+
+                .menu_quantity{
+                    width:20%!important;
+                    float: left;
+                    text-align: center;
+                    background:rgb(187, 183, 183);
+                    border-radius: 1em;
+                }
+
+                .menu_price{
+                    width:20%!important;
+                    float: left;
+                    text-align: center;
+                }
+            }
+        }
+
+        .menu_total{
+            margin-top:10px;
+            width:100%!important;
+            min-height:20%!important;
+            border-top:solid 1px rgb(211, 208, 208);
+            float: left;
+            padding:10px 0px 10px 0px;
+            .span1{
+                width:60%!important;
+                float:left;
+            }
+
+            .spacer{
+                width:20%!important;
+                float: left;
+            }
+
+            .span2{
+                width:20%!important;
+                float:left;
+                text-align: center;
+            }
         }
 
         .card_button{
             width:100%!important;
+            min-height: 10%;
             max-height: 10%;
-            background:maroon;
             margin:auto;
+            float: left;
             .card_button_accept{
                 width:48%!important;
                 float: left;   
@@ -24,6 +83,11 @@ page-home {
                 width:48%!important;
                 float: right;   
             }
+        }
+
+        .address{
+            margin:0px!important;
+            padding:0px!important;
         }
     }
 }
