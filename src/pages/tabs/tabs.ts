@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavParams, Events } from 'ionic-angular'
 import { HomePage } from '../home/home';
-import { LoginPage } from '../login/login'; 
 import { OrdersPage } from '../orders/orders';
 @Component({
   templateUrl: 'tabs.html'

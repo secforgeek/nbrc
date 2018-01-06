@@ -29,11 +29,12 @@ export class LoginPage{
   login(value){
     this.loginFormdata = value;
     let pass = sha256(this.loginFormdata.password);
-    this.fcm.getToken().then(token => {
+    //this.fcm.getToken().then(token => {
+      let token = "ep3G3OOS_kQ:APA91bGzEIP71MULIBnL8jPd84QRDlxIoekjsEEYOQbg4FFEwaJHvEodR6jT-4hZnwDPK3kJKZdU6rtFk166WuUN0pGU8Tzpgwm_KbdKOnXL8n2yM5Gs9ct6-NOILgunwDHA_h6xrc25";
       console.log(token);
       this.authprovider.AuthLogin(this.loginFormdata.username, pass, token).subscribe(data => {
         this.successData = data;
-        console.log(JSON.stringify(data));
+        console.log(this.successData);
         switch(Object.keys(this.successData.response)[0]){
           case "error":
             this.toast.fireToast(this.successData.response.error);
@@ -58,6 +59,6 @@ export class LoginPage{
       }, () => {
         console.log(this.successData);
       });
-    });
+    //});
   }
 }

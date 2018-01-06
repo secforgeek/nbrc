@@ -19,7 +19,7 @@ export class MyApp {
         this.rootPage = TabsPage;
         console.log("Storage Start : "+data);
       }else{
-        this.rootPage = LoginPage;
+        this.rootPage = TabsPage;//LoginPage;
         console.log("Storage Else Start : "+data);
       }
       this.platformReady();
